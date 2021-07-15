@@ -61,6 +61,24 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -10928,17 +10946,17 @@ p {
   font-weight: 800;
 }
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #e6a756;
+  color: #fff;
 }
 @media (min-width: 992px) {
   #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.9rem;
+    font-size: 1.25rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: rgba(255, 255, 255, 0.6);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #e6a756;
+    color: #fff;
   }
 }
 
